@@ -1,5 +1,7 @@
 package org.cli.timer;
 
+import org.cli.timer.utils.Utils;
+
 import java.util.Arrays;
 
 // -t (time): time in seconds. default is 600
@@ -9,7 +11,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(args));
-        System.out.println("");
+        Utils.print(Arrays.toString(args));
+
+        TimerCli timer = new TimerCli(20, 10, true);
+        timer.run();
     }
 }
