@@ -13,6 +13,13 @@ public class Timer {
     private String status = "STOPPED";
 
     private Consumer<Integer> onTimerTick = timer -> {};
+
+    private Runnable onTimerStart = () -> {};
+    private Runnable onTimerStop = () -> {};
+
+    private Runnable onPlayStartSound = () -> {};
+    private Runnable onPlayRingSound = () -> {};
+
     private Consumer<Integer> onDelayTick = timer -> {};
 
     public Timer(int _time, int _delay, boolean _silent) {
@@ -23,11 +30,12 @@ public class Timer {
 
     public void start() {
         // timer
+        if (!silent) { this.onPlayStartSound.run(); }
         this.status = "TIMER";
+        this.onTimerStart.run();
         this.countdown(time, onTimerTick);
-
-        // notification
-        if (!silent) {}
+        this.onTimerStop.run();
+        if (!silent) { this.onPlayRingSound.run(); }
 
         // delay
         this.status = "DELAY";
@@ -57,7 +65,12 @@ public class Timer {
 
     public String getStatus() { return status; }
 
+    public void setOnTimerStart(Runnable _onTimerStart) { onTimerStart = _onTimerStart; }
     public void setOnTimerTick(Consumer<Integer> _onTimerTick) { onTimerTick = _onTimerTick; }
+    public void setOnTimerStop(Runnable _onTimerStop) { onTimerStop = _onTimerStop; }
+
+    public void setOnPlayStartSound(Runnable _onPlayStartSound) { onPlayStartSound = _onPlayStartSound; }
+    public void setOnPlayRingSound(Runnable _onPlayRingSound) { onPlayRingSound = _onPlayRingSound; }
 
     public void setOnDelayTick(Consumer<Integer> _onDelayTick) { onDelayTick = _onDelayTick; }
 }
