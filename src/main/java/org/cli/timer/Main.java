@@ -13,7 +13,6 @@ public class Main {
     public static void main(String[] args) {
         Utils.print(Arrays.toString(args));
 
-        TimerCli timer = new TimerCli(20, 10, true);
-        timer.run();
+        new CLI( new Timer(20, 5, false) ).start();
     }
 }
