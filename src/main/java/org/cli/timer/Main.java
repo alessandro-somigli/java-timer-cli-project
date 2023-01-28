@@ -11,8 +11,19 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Utils.print(Arrays.toString(args));
+        int time = 600;
+        int delay = -1;
+        boolean silent = false;
 
-        new CLI( new Timer(20, 5, false) ).start();
+        // parse arguments
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "-t" -> time = Integer.parseInt(args[++i]);
+                case "-d" -> delay = Integer.parseInt(args[++i]);
+                case "-s" -> silent = true;
+            }
+        }
+
+        new CLI( new Timer(time, delay, silent) ).start();
     }
 }
