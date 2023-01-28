@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="added delay logic">
+    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="added argument parsing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.cli.timer.Main" />
       <module name="timer-cli-project" />
-      <option name="PROGRAM_PARAMETERS" value="-t 180 -w -r 20" />
+      <option name="PROGRAM_PARAMETERS" value="-t 5 -s -d -1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.cli.timer.*" />
@@ -95,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674909234888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added argument parsing">
+      <created>1674909655789</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674909655789</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +123,7 @@
     <MESSAGE value="added timer logic" />
     <MESSAGE value="changed project structure, now timer and cli are separate" />
     <MESSAGE value="added delay logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="added delay logic" />
+    <MESSAGE value="added argument parsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="added argument parsing" />
   </component>
 </project>

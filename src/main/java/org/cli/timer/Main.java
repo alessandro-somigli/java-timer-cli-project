@@ -2,8 +2,6 @@ package org.cli.timer;
 
 import org.cli.timer.utils.Utils;
 
-import java.util.Arrays;
-
 // -t (time): time in seconds. default is 600
 // -d (delay): defines how many seconds before running again. default is -1 (do not run again)
 // -s (silent): weather to show a popup when finished. default is false
@@ -16,14 +14,25 @@ public class Main {
         boolean silent = false;
 
         // parse arguments
+        String error = "";
         for (int i = 0; i < args.length; i++) {
             switch (args[i]) {
-                case "-t" -> time = Integer.parseInt(args[++i]);
-                case "-d" -> delay = Integer.parseInt(args[++i]);
+                case "-t" -> {
+                    try {
+                        time = Integer.parseInt(args[++i]);
+                    } catch (Exception e) { error = "error: " + args[i-1] + " requires a number."; }
+                }
+                case "-d" -> {
+                    try {
+                        delay = Integer.parseInt(args[++i]);
+                    } catch (Exception e) { error = "error: " + args[i-1] + " requires a number."; }
+                }
                 case "-s" -> silent = true;
+                default -> error = "error: " + args[i] + " is not a valid argument.";
             }
         }
 
-        new CLI( new Timer(time, delay, silent) ).start();
+        if (error.equals("")) new CLI( new Timer(time, delay, silent) ).start();
+        else Utils.print(error);
     }
 }
