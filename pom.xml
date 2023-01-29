@@ -13,6 +13,7 @@
                 <configuration>
                     <archive>
                         <manifest>
+                            <addClasspath>true</addClasspath>
                             <mainClass>org.cli.timer.Main</mainClass>
                         </manifest>
                     </archive>
