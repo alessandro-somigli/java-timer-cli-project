@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="fixed pom 6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="fixed pom 7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +72,7 @@
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
+          <option name="buildCliOptions" value="--no-cache " />
           <option name="containerName" value="timer-cli" />
           <option name="showCommandPreview" value="true" />
           <option name="sourceFilePath" value="Dockerfile" />
@@ -221,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675005751353</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fixed pom 7">
+      <created>1675006611611</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675006611611</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,6 +259,7 @@
     <MESSAGE value="fixed pom 4" />
     <MESSAGE value="fixed pom 5" />
     <MESSAGE value="fixed pom 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed pom 6" />
+    <MESSAGE value="fixed pom 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed pom 7" />
   </component>
 </project>
