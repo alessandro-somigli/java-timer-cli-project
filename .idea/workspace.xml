@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="added ascii art">
+    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="optimizations">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/utils/AsciiArt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/utils/AsciiArt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <recent name="C:\Users\aless\IdeaProjects\timer-cli-project\src\main\resources\sound-effects" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.cli.timer.Main" />
       <module name="timer-cli-project" />
@@ -73,8 +73,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -147,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674954524409</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="finished ascii art">
+      <created>1674989147624</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674989147624</updated>
+    </task>
+    <task id="LOCAL-00010" summary="optimizations">
+      <created>1674989371623</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674989371623</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +194,8 @@
     <MESSAGE value="optimized timer" />
     <MESSAGE value="finished v 1" />
     <MESSAGE value="added ascii art" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ascii art" />
+    <MESSAGE value="finished ascii art" />
+    <MESSAGE value="optimizations" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimizations" />
   </component>
 </project>
