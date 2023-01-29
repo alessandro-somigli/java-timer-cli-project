@@ -13,8 +13,6 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>src/java</classpathPrefix>
                             <mainClass>org.cli.timer.Main</mainClass>
                         </manifest>
                     </archive>
