@@ -10,4 +10,4 @@ RUN mvn -B dependency:resolve
 
 RUN mvn -B package
 
-ENTRYPOINT ["java", "-jar", "target/timer-cli-project-1.0-SNAPSHOT.jar", "-t", "30"]
+CMD java -jar target/timer-cli-project-1.0-SNAPSHOT.jar "$@"
