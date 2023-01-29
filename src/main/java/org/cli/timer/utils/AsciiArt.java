@@ -106,7 +106,8 @@ public class AsciiArt {
         };
     }
 
-    public static String[] getSpaces(int _number) {
+    @Contract("_ -> new")
+    public static String @NotNull [] getSpaces(int _number) {
         String spaces = new String(new char[_number]).replace('\0', ' ');
         return new String[]{
                 spaces,
@@ -116,7 +117,7 @@ public class AsciiArt {
                 spaces,
                 spaces
         };
-    };
+    }
 
     @Contract(value = " -> new", pure = true)
     public static String @NotNull [] getOf() {

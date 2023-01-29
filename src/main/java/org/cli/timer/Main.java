@@ -1,6 +1,7 @@
 package org.cli.timer;
 
 import org.cli.timer.utils.Utils;
+import org.jetbrains.annotations.NotNull;
 
 // -t (time): time in seconds. default is 600
 // -d (delay): defines how many seconds before running again. default is -1 (do not run again)
@@ -8,7 +9,7 @@ import org.cli.timer.utils.Utils;
 // example: -t 3600 -d 600 -s
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String @NotNull [] args) {
         int time = 600;
         int delay = -1;
         boolean silent = false;
