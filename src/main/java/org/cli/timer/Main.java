@@ -3,6 +3,9 @@ package org.cli.timer;
 import org.cli.timer.utils.Utils;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.File;
+import java.util.Objects;
+
 // -t (time): time in seconds. default is 600
 // -d (delay): defines how many seconds before running again. default is -1 (do not run again)
 // -s (silent): weather to show a popup when finished. default is false

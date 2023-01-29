@@ -12,17 +12,19 @@ public class CLI {
     private final int progressBarLength = 100;
     private final Timer timer;
 
-    private static final File startSoundFile = new File("./sound-effects/start-timer.wav").getAbsoluteFile();
-    private static final File timerRingFile = new File("./sound-effects/timer-ring.wav").getAbsoluteFile();
+    private static final File startSoundFile =
+            Utils.getFile("/sound-effects/start-timer.wav", "/sound-effects/", "start-timer.wav");
+    private static final File timerRingFile =
+            Utils.getFile("/sound-effects/timer-ring.wav", "/sound-effects/","timer-ring.wav");
 
     public CLI(Timer _timer) {
         timer = _timer;
-            timer.setOnTimerTick(progress -> this.template(progress, timer.getTime(), timer.getStatus()));
-            timer.setOnDelayTick(progress -> this.template(progress, timer.getDelay(), timer.getStatus()));
+        timer.setOnTimerTick(progress -> this.template(progress, timer.getTime(), timer.getStatus()));
+        timer.setOnDelayTick(progress -> this.template(progress, timer.getDelay(), timer.getStatus()));
 
-            timer.setOnPlayStartSound( () -> new Thread(() -> this.sound(startSoundFile)).start() );
+        timer.setOnPlayStartSound( () -> new Thread(() -> this.sound(startSoundFile)).start() );
 
-            timer.setOnPlayRingSound(() -> new Thread(() -> this.sound(timerRingFile)).start() );
+        timer.setOnPlayRingSound(() -> new Thread(() -> this.sound(timerRingFile)).start() );
     }
 
     public void sound(File _file) {

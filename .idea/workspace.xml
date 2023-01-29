@@ -9,10 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="fixed pom 8">
-      <change afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
+    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="modified docker stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +61,11 @@
       <recent name="C:\Users\aless\IdeaProjects\timer-cli-project\src\main\resources\sound-effects" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.cli.timer.Main" />
       <module name="timer-cli-project" />
-      <option name="PROGRAM_PARAMETERS" value="-t 5 -s -d 10" />
+      <option name="PROGRAM_PARAMETERS" value="-t 5 -d 10" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.cli.timer.*" />
@@ -86,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
@@ -237,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675006813956</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="modified docker stuff">
+      <created>1675016778277</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675016778277</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,6 +282,7 @@
     <MESSAGE value="fixed pom 6" />
     <MESSAGE value="fixed pom 7" />
     <MESSAGE value="fixed pom 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed pom 8" />
+    <MESSAGE value="modified docker stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified docker stuff" />
   </component>
 </project>
