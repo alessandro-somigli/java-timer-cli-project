@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="finished v 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/utils/AsciiArt.java" afterDir="false" />
+    <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="added ascii art">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/utils/AsciiArt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/utils/AsciiArt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674929660041</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added ascii art">
+      <created>1674954524409</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674954524409</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +170,7 @@
     <MESSAGE value="added argument parsing" />
     <MESSAGE value="optimized timer" />
     <MESSAGE value="finished v 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished v 1" />
+    <MESSAGE value="added ascii art" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ascii art" />
   </component>
 </project>

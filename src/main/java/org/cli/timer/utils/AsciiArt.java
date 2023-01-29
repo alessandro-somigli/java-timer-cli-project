@@ -85,26 +85,38 @@ public class AsciiArt {
     @Contract(value = " -> new", pure = true)
     public static String @NotNull [] getOpenBrackets() {
         return new String[]{
-                "╔═ ",
-                "║  ",
-                "║  ",
-                "║  ",
-                "║  ",
-                "╚═ "
+                "╔═",
+                "║ ",
+                "║ ",
+                "║ ",
+                "║ ",
+                "╚═"
         };
     }
 
     @Contract(value = " -> new", pure = true)
     public static String @NotNull [] getCloseBrackets() {
         return new String[]{
-                " ═╗",
-                "  ║",
-                "  ║",
-                "  ║",
-                "  ║",
-                " ═╝"
+                "═╗",
+                " ║",
+                " ║",
+                " ║",
+                " ║",
+                "═╝"
         };
     }
+
+    public static String[] getSpaces(int _number) {
+        String spaces = new String(new char[_number]).replace('\0', ' ');
+        return new String[]{
+                spaces,
+                spaces,
+                spaces,
+                spaces,
+                spaces,
+                spaces
+        };
+    };
 
     @Contract(value = " -> new", pure = true)
     public static String @NotNull [] getOf() {

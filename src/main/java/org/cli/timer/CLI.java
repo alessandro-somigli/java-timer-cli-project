@@ -89,6 +89,7 @@ public class CLI {
         Arrays.fill(title, "  ");
 
         AsciiArt.appendString(title, AsciiArt.getOpenBrackets());
+        AsciiArt.appendString(title, AsciiArt.getSpaces(1));
 
         String[] progressNumber = new String[title.length];
         Arrays.fill(progressNumber, "");
@@ -110,6 +111,7 @@ public class CLI {
         AsciiArt.appendString(title, AsciiArt.getOf());
         AsciiArt.appendString(title, maxNumber);
 
+        AsciiArt.appendString(title, AsciiArt.getSpaces(1));
         AsciiArt.appendString(title, AsciiArt.getCloseBrackets());
 
         return title;
@@ -117,12 +119,21 @@ public class CLI {
 
     public String[] generateProgressBar(int _progress, int _max) {
         int progressChars = (int)(( (double)_progress/_max ) * progressBarLength);
-        String timerProgressBarFill = new String(new char[progressChars]).replace('\0', '█');
-        String timerProgressBarEmpty = new String(new char[progressBarLength-progressChars]).replace('\0', ' ');
+        String progressBarFill = new String(new char[progressChars]).replace('\0', '█');
+        String progressBarEmpty = new String(new char[progressBarLength-progressChars]).replace('\0', ' ');
+        String borderBar = new String(new char[progressBarLength]).replace('\0', '═');
 
         String[] title = new String[6];
+        Arrays.fill(title, "");
 
-        Arrays.fill(title, timerProgressBarFill + timerProgressBarEmpty);
+        title[0] += borderBar;
+        title[5] += borderBar;
+
+        title[1] += progressBarFill + progressBarEmpty;
+        title[2] += progressBarFill + progressBarEmpty;
+        title[3] += progressBarFill + progressBarEmpty;
+        title[4] += progressBarFill + progressBarEmpty;
+
         title = AsciiArt.appendString(AsciiArt.getOpenBrackets(), title);
         AsciiArt.appendString(title, AsciiArt.getCloseBrackets());
 
