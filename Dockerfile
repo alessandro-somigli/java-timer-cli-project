@@ -1,4 +1,4 @@
-FROM openjdk:17.0.1-jdk-slim
+FROM openjdk:19-jdk-slim
 
 WORKDIR /app
 
@@ -10,4 +10,4 @@ RUN mvn -B dependency:resolve
 
 RUN mvn -B package
 
-ENTRYPOINT ["java", "-jar", "target/timer-cli-project.jar", "-t", "30"]
+ENTRYPOINT ["java", "-jar", "timer-cli-project.jar", "-t", "30"]
