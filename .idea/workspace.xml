@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="fixed pom 8">
+      <change afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
@@ -75,14 +76,7 @@
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="buildArgs">
-            <list>
-              <DockerEnvVarImpl>
-                <option name="name" value="args" />
-                <option name="value" value="-t 5" />
-              </DockerEnvVarImpl>
-            </list>
-          </option>
+          <option name="command" value="" />
           <option name="containerName" value="timer-cli" />
           <option name="showCommandPreview" value="true" />
           <option name="sourceFilePath" value="Dockerfile" />
