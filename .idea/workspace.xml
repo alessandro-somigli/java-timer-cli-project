@@ -10,12 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfabd91c-ac39-41d4-9c84-dad202082afa" name="Changes" comment="modified docker stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cli/timer/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cli/timer/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
