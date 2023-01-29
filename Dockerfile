@@ -10,4 +10,5 @@ RUN mvn -B dependency:resolve
 
 RUN mvn -B package
 
-ENTRYPOINT ["java", "-jar", "target/chat-1.0-SNAPSHOT.jar", "-t", "30"]
+ENTRYPOINT ["tree"]
+# ENTRYPOINT ["java", "-jar", "target/chat-1.0-SNAPSHOT.jar", "-t", "30"]
