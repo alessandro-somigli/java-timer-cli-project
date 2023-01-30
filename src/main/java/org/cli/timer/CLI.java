@@ -45,8 +45,13 @@ public class CLI {
     // width: 54
     public void template(int _progress, int _max, String _status) {
         // cls
-        try { new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); }
-        catch (InterruptedException | IOException e) { Utils.log(e.getMessage()); }
+        String operatingSystem = System.getProperty("os.name");
+        if (operatingSystem.contains("Windows")) {
+            try { new ProcessBuilder().command("cmd", "/c", "cls").inheritIO().start().waitFor(); }
+            catch (InterruptedException | IOException e) { Utils.log(e.getMessage()); }
+        } else if (operatingSystem.contains("Linux") || operatingSystem.contains("Mac")) {
+            Utils.print("\033[H\033[2J");
+        }
 
         String title = AsciiArt.toString( AsciiArt.getTitle() );
 
@@ -61,12 +66,7 @@ public class CLI {
 
         String bar = AsciiArt.toString( generateProgressBar(_progress, _max) );
 
-        Utils.print(
-                title +
-                mode  +
-                progress +
-                bar
-        );
+        Utils.print(title + mode  + progress + bar);
     }
 
     public String[] generatePercentage(int _number) {
